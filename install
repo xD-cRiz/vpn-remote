@@ -1,0 +1,2 @@
+mkdir VPNRemote && cd $_
+bash <(curl -sSL https://raw.githubusercontent.com/rifkytech/vpn-remote/master/setup.sh)
