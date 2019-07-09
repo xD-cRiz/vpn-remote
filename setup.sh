@@ -57,28 +57,37 @@ echo -n "Silahkan Masukan Password VPN yang sudah dibuat: "
 read password
 echo ""
 echo ""
-PS3='Silahkan Pilih lokasi server VPN yang sudah dibuat: '
-options=("id-1.hostddns.us" "id-2.hostddns.us" "id-3.hostddns.us" "Quit")
-select opt in "${options[@]}"
+PS3='Silahkan pilih lokasi server yang telah dibuat: '
+echo ""
+while :
 do
-    case $opt in
-        "id-1.hostddns.us")
-            server = "id-1.hostddns.us"
-            ;;
-        "id-2.hostddns.us")
-            server = "id-2.hostddns.us"
-            ;;
-        "id-3.hostddns.us")
-            server = "id-3.hostddns.us"
-            ;;
-        "Quit")
-            break
-            ;;
-        *) echo "invalid option $REPLY";;
-    esac
+    options=("id-1.hostddns.us" "id-2.hostddns.us" "id-3.hostddns.us" "us-1.hostddns.us" "Quit")
+    select opt in "${options[@]}"
+    do
+        case $opt in
+            "id-1.hostddns.us")
+                server="id-1.hostddns.us"
+                break 2 
+                ;;
+            "id-2.hostddns.us")           
+                server="id-2.hostddns.us"
+		break 2
+                ;;
+            "id-3.hostddns.us")
+                server="id-3.hostddns.us"
+                break 2
+                ;;
+            "us-1.hostddns.us")
+                server="us-1.hostddns.us"
+                break 2
+                ;;
+            "Quit")
+                exit
+                ;;
+            *) printf '%s\n' 'Silahkan Masukan angka yang benar !';;
+        esac
+    done
 done
-
-
 echo "Ok, Username $username dan Password $password  dengan server $server berhasil kesimpan"
 
 
