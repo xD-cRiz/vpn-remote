@@ -101,6 +101,5 @@ sleep 2s
 echo "Installasi telah selesai."
 echo "Silahkan jalankan vpn dengan : sudo openvpn $server.ovpn "
 echo ""
-cd VPNRemote
 
 
