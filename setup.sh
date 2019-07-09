@@ -61,13 +61,13 @@ select opt in "${options[@]}"
 do
     case $opt in
         "id-1.hostddns.us")
-            server=id-1.hostddns.us
+            server = "id-1.hostddns.us"
             ;;
         "id-2.hostddns.us")
-            server=id-2.hostddns.us
+            server = "id-2.hostddns.us"
             ;;
         "id-3.hostddns.us")
-            server=id-3.hostddns.us
+            server = "id-3.hostddns.us"
             ;;
         "Quit")
             break
