@@ -56,7 +56,6 @@ read username
 echo -n "Silahkan Masukan Password VPN yang sudah dibuat: "
 read password
 echo ""
-echo ""
 PS3='Silahkan pilih lokasi server yang telah dibuat: '
 echo ""
 while :
@@ -67,18 +66,22 @@ do
         case $opt in
             "id-1.hostddns.us")
                 server="id-1.hostddns.us"
+		wget https://repository.mexious.com/config/id-1.hostddns.us.ovpn
                 break 2 
                 ;;
             "id-2.hostddns.us")           
                 server="id-2.hostddns.us"
+		wget https://repository.mexious.com/config/id-2.hostddns.us.ovpn
 		break 2
                 ;;
             "id-3.hostddns.us")
                 server="id-3.hostddns.us"
+		wget https://repository.mexious.com/config/id-3.hostddns.us.ovpn
                 break 2
                 ;;
             "us-1.hostddns.us")
                 server="us-1.hostddns.us"
+		wget https://repository.mexious.com/config/us-1.hostddns.us.ovpn
                 break 2
                 ;;
             "Quit")
