@@ -41,7 +41,7 @@ sleep 2s
 if check_cmd openvpn; then
   echo "OK, OpenVPN Is Installed."
   echo "wait......."
-  echo "
+  echo ""
 else 
   echo "Installing OpenVPN Software"
   sudo apt install openvpn
