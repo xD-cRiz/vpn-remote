@@ -45,6 +45,13 @@ else
   sudo apt install openvpn
   echo ""
   echo "Done. waiting...."
+  sleep 2s
 fi
+echo -n "Silahkan Masukan Username VPN: "
+read username
+echo -n "Silahkan Masukan Password VPN: "
+read password
+
+echo "Ok, Username $username dan Password $password berhasil kesimpan"
 
 
