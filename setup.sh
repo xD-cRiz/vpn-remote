@@ -32,6 +32,7 @@ cat << "EOF"
                      Copyright (c) 2019                             
 
 EOF
+echo ""
 echo "Selamat datang di Installasi VPN Remote FreeDDNS !"
 echo ""
 echo ""
