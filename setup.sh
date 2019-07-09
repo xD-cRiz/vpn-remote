@@ -92,6 +92,11 @@ do
         esac
     done
 done
+cat <<EOF >> pass.txt
+$username
+$password
+
+EOF
 echo "Ok, Username $username dan Password $password  dengan server $server berhasil kesimpan"
 
 
