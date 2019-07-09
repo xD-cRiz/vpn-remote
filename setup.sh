@@ -40,18 +40,43 @@ sleep 2s
 if check_cmd openvpn; then
   echo "OK, OpenVPN Is Installed."
   echo "wait......."
+  echo "
 else 
   echo "Installing OpenVPN Software"
   sudo apt install openvpn
   echo ""
   echo "Done. waiting...."
+  echo ""
   sleep 2s
 fi
-echo -n "Silahkan Masukan Username VPN: "
+echo -n "Silahkan Masukan Username VPN yang sudah dibuat: "
 read username
-echo -n "Silahkan Masukan Password VPN: "
+echo -n "Silahkan Masukan Password VPN yang sudah dibuat: "
 read password
+echo ""
+echo ""
+PS3='Silahkan Pilih lokasi server VPN yang sudah dibuat: '
+options=("id-1.hostddns.us" "id-2.hostddns.us" "id-3.hostddns.us" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "id-1.hostddns.us")
+            server=id-1.hostddns.us
+            ;;
+        "id-2.hostddns.us")
+            server=id-2.hostddns.us
+            ;;
+        "id-3.hostddns.us")
+            server=id-3.hostddns.us
+            ;;
+        "Quit")
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
 
-echo "Ok, Username $username dan Password $password berhasil kesimpan"
+
+echo "Ok, Username $username dan Password $password  dengan server $server berhasil kesimpan"
 
 
