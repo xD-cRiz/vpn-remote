@@ -57,7 +57,7 @@ echo -n "Silahkan Masukan Password VPN yang sudah dibuat: "
 read password
 echo ""
 echo ""
-PS3="Silahkan Pilih lokasi server VPN yang sudah dibuat: "
+PS3='Silahkan Pilih lokasi server VPN yang sudah dibuat: '
 options=("id-1.hostddns.us" "id-2.hostddns.us" "id-3.hostddns.us" "Quit")
 select opt in "${options[@]}"
 do
