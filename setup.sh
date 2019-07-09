@@ -24,17 +24,27 @@ check_cmd() {
 }
 echo ""
 echo ""
-echo "
-echo " ________                              _______   _______   __    __   ______  "
-echo "|        \                            |       \ |       \ |  \  |  \ /      \ "
-echo "| $$$$$$$$______    ______    ______  | $$$$$$$\| $$$$$$$\| $$\ | $$|  $$$$$$\"
-echo "| $$__   /      \  /      \  /      \ | $$  | $$| $$  | $$| $$$\| $$| $$___\$$"
-echo "| $$  \ |  $$$$$$\|  $$$$$$\|  $$$$$$\| $$  | $$| $$  | $$| $$$$\ $$ \$$    \ "
-echo "| $$$$$ | $$   \$$| $$    $$| $$    $$| $$  | $$| $$  | $$| $$\$$ $$ _\$$$$$$\"
-echo "| $$    | $$      | $$$$$$$$| $$$$$$$$| $$__/ $$| $$__/ $$| $$ \$$$$|  \__| $$"
-echo "| $$    | $$       \$$     \ \$$     \| $$    $$| $$    $$| $$  \$$$ \$$    $$"
-echo " \$$     \$$        \$$$$$$$  \$$$$$$$ \$$$$$$$  \$$$$$$$  \$$   \$$  \$$$$$$ "
+cat << "EOF"
+   ____            ___  ___  _  ______
+  / __/______ ___ / _ \/ _ \/ |/ / __/
+ / _// __/ -_) -_) // / // /    /\ \  
+/_/ /_/  \__/\__/____/____/_/|_/___/  
+                     Copyright (c) 2019                             
 
+EOF
 echo "Selamat datang di Installasi VPN Remote FreeDDNS !"
+echo ""
+echo ""
+echo "Checking Software .................................."
+sleep 2s
+if check_cmd openvpn; then
+  echo "OK, OpenVPN Is Installed."
+  echo "wait......."
+else 
+  echo "Installing OpenVPN Software"
+  sudo apt install openvpn
+  echo ""
+  echo "Done. waiting...."
+fi
 
 
