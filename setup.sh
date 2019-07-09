@@ -95,8 +95,11 @@ done
 cat <<EOF >> pass.txt
 $username
 $password
-
 EOF
-echo "Ok, Username $username dan Password $password  dengan server $server berhasil kesimpan"
+echo ""
+sleep 2s
+echo "Installasi telah selesai."
+echo ""
+echo "Silahkan jalankan vpn dengan : sudo openvpn $server .ovpn "
 
 
