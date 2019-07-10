@@ -1,5 +1,2 @@
 clear
-mkdir vpnfile && cd vpnfile
-break
-sleep 1s
-bash <(curl -sSL https://raw.githubusercontent.com/rifkytech/vpn-remote/master/setup.sh)
+bash <(mkdir vpnfile && cd vpnfile curl -sSL https://raw.githubusercontent.com/rifkytech/vpn-remote/master/setup.sh)
