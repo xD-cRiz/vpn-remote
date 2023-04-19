@@ -1,2 +1,2 @@
 clear
-bash <(curl -sSL https://raw.githubusercontent.com/rifkytech/vpn-remote/master/setup.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/xD-cRiz/vpn-remote/master/setup.sh)
