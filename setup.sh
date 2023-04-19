@@ -67,22 +67,22 @@ do
         case $opt in
             "id-1.hostddns.us")
                 server="id-1.hostddns.us"
-		wget https://repository.mexious.com/config/id-1.hostddns.us.ovpn
+		wget https://repository.hostddns.us/config/id-1.hostddns.us.ovpn
                 break 2 
                 ;;
             "id-2.hostddns.us")           
                 server="id-2.hostddns.us"
-		wget https://repository.mexious.com/config/id-2.hostddns.us.ovpn
+		wget https://repository.hostddns.usconfig/id-2.hostddns.us.ovpn
 		break 2
                 ;;
             "id-3.hostddns.us")
                 server="id-3.hostddns.us"
-		wget https://repository.mexious.com/config/id-3.hostddns.us.ovpn
+		wget https://repository.hostddns.us/config/id-3.hostddns.us.ovpn
                 break 2
                 ;;
             "us-1.hostddns.us")
                 server="us-1.hostddns.us"
-		wget https://repository.mexious.com/config/us-1.hostddns.us.ovpn
+		wget https://repository.hostddns.us/config/us-1.hostddns.us.ovpn
                 break 2
                 ;;
             "Quit")
